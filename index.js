@@ -1,6 +1,6 @@
 const apiKey = `4d35a9712d57be56e486689d09589f2f`;
 
-let uRl = 'https://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=4d35a9712d57be56e486689d09589f2f&units=metric';
+let uRl = 'https://api.openweathermap.org/data/2.5/weather?q=rajshahi&appid=4d35a9712d57be56e486689d09589f2f&units=metric';
 let cityValue = document.getElementById('city');
 let tempValue = document.getElementById('temp');
 let conditionVal = document.getElementById('condition');
