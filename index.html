@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>weather generator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="city-name" type="text" class="form-control" placeholder="Enter a Weather Location">
+                <div class="input-group-append">
+                    <button onclick="searchTemp()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <h3 id="first-location">(Your current location)</h3>
+            <img id="weather-icon" src="" alt="">
+            <h1 id="city"></h1>
+            <h3><span id="temp"></span>° Cel</h3>
+            <h1 id="condition" class="lead"></h1>
+            <h1 id="wind-vis" style="display: none;" class="lead">Wind: <span id="wind-spd" class="lead"></span>km/h</h1>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
